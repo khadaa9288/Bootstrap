@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    padding:40px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.gallery{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    width:350px;
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    display:block;
+}        
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Service Images</h1>
+
+        <div class="gallery">
+            <div class="card">
+                <img src="https://bootstrapbrain.com/wp-content/uploads/2024/05/bootstrap-service-card-template-with-icon-title-and-description-1333x800.webp" alt="Image 1">
+            </div>
+
+            <div class="card">
+                <img src="https://bootstrapbrain.com/wp-content/uploads/2023/08/bootstrap-service-box-with-icon-example-jpg.webp" alt="Image 2">
+            </div>
+
+            <div class="card">
+                <img src="https://bootstrapbrain.com/wp-content/uploads/2024/05/bootstrap-service-card-with-shipping-and-support-information-1333x800.webp" alt="Image 3">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
