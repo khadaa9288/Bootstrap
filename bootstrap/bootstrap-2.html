@@ -1,78 +1,454 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Our Services</title>
+
     <style>
-    *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
-
-body{
-    background:#f4f4f4;
-    padding:40px;
-}
-
-.container{
-    max-width:1200px;
-    margin:auto;
-}
-
-h1{
-    text-align:center;
-    margin-bottom:30px;
-}
-
-.gallery{
-    display:flex;
-    gap:20px;
-    flex-wrap:wrap;
-    justify-content:center;
-}
-
-.card{
-    width:350px;
-    background:#fff;
-    border-radius:10px;
-    overflow:hidden;
-    box-shadow:0 4px 10px rgba(0,0,0,0.2);
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-}
-
-.card img{
-    width:100%;
-    display:block;
-}        
-</style>
+        .navbar-nav li{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1>Service Images</h1>
+    <nav class="navbar navbar-expand-lg bg-primary">
+  <div class="container">
+    <a class="navbar-brand text-white text-bold" href="#"> PRASHANTH </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active text-white text-bold" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white text-bold" href="#"> About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white text-bold" href="#">Contact me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white text-bold" aria-disabled="true">Help</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-        <div class="gallery">
-            <div class="card">
-                <img src="https://bootstrapbrain.com/wp-content/uploads/2024/05/bootstrap-service-card-template-with-icon-title-and-description-1333x800.webp" alt="Image 1">
-            </div>
+<hr>
 
-            <div class="card">
-                <img src="https://bootstrapbrain.com/wp-content/uploads/2023/08/bootstrap-service-box-with-icon-example-jpg.webp" alt="Image 2">
-            </div>
+  <div class="container py-5">
 
-            <div class="card">
-                <img src="https://bootstrapbrain.com/wp-content/uploads/2024/05/bootstrap-service-card-with-shipping-and-support-information-1333x800.webp" alt="Image 3">
+    <div class="text-center mb-5">
+        <h5 class="text-primary">OUR SERVICES</h5>
+        <h1 class="fw-bold">What We Offer</h1>
+        <p class="text-muted">
+            We provide quality services with modern technology and excellent customer support.
+        </p>
+    </div>
+
+    <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-md-4">
+            <div class="card shadow border-1  h-100">
+                <div class="card-body text-center">
+
+                    <i class="bi bi-code-slash text-primary display-3"></i>
+
+                    <h4 class="mt-3">Web Development</h4>
+
+                    <p class="text-muted">
+                        Responsive websites built with HTML, CSS, Bootstrap and JavaScript.
+                    </p>
+
+                    <a href="#" class="btn btn-outline-primary">
+                        Read More
+                    </a>
+
+                </div>
             </div>
         </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+            <div class="card  shadow border-1 h-100">
+                <div class="card-body text-center">
+
+                    <i class="bi bi-phone display-3"></i>
+
+                    <h4 class="mt-3">App Development</h4>
+
+                    <p>
+                        Build Android and iOS applications with beautiful and user-friendly interfaces.
+                    </p>
+
+                    <a href="#" class="btn btn-outline-primary">
+                        Read More
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+            <div class="card shadow border-1 h-100">
+                <div class="card-body text-center">
+
+                    <i class="bi bi-bar-chart-line text-primary display-3"></i>
+
+                    <h4 class="mt-3">Digital Marketing</h4>
+
+                    <p class="text-muted">
+                        Grow your business with SEO, social media marketing and online advertising.
+                    </p>
+
+                    <a href="#" class="btn btn-outline-primary">
+                        Read More
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
     </div>
+
+  </div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<hr>    
+
+  <div class="container py-5">
+
+    <div class="text-center mb-5">
+        <h1 class="fw-bold">Our Services</h1>
+        <p class="text-secondary">
+            We provide quality solutions for businesses and individuals.
+        </p>
+    </div>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card text-center shadow-sm h-100">
+                <div class="card-body">
+                    <i class="bi bi-laptop display-3 text-primary"></i>
+                    <h4 class="mt-3">Web Development</h4>
+                    <p>
+                        Build responsive and modern websites using HTML,
+                        CSS, Bootstrap and JavaScript.
+                    </p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card text-center shadow-sm h-100">
+                <div class="card-body">
+                    <i class="bi bi-phone display-3 text-success"></i>
+                    <h4 class="mt-3">App Development</h4>
+                    <p>
+                        Create Android and iOS applications with user-friendly
+                        interfaces and smooth performance.
+                    </p>
+                    <a href="#" class="btn btn-success">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card text-center shadow-sm h-100">
+                <div class="card-body">
+                    <i class="bi bi-bar-chart display-3 text-danger"></i>
+                    <h4 class="mt-3">Digital Marketing</h4>
+                    <p>
+                        Improve your online presence with SEO, social media,
+                        and digital advertising.
+                    </p>
+                    <a href="#" class="btn btn-danger">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card text-center shadow-sm h-100">
+                <div class="card-body">
+                    <i class="bi bi-cloud display-3 text-info"></i>
+                    <h4 class="mt-3">Cloud Services</h4>
+                    <p>
+                        Secure cloud storage and scalable infrastructure for
+                        modern businesses.
+                    </p>
+                    <a href="#" class="btn btn-info">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card text-center shadow-sm h-100">
+                <div class="card-body">
+                    <i class="bi bi-shield-check display-3 text-warning"></i>
+                    <h4 class="mt-3">Cyber Security</h4>
+                    <p>
+                        Protect your data and systems with advanced security
+                        solutions and monitoring.
+                    </p>
+                    <a href="#" class="btn btn-warning">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card text-center shadow-sm h-100">
+                <div class="card-body">
+                    <i class="bi bi-headset display-3 text-dark"></i>
+                    <h4 class="mt-3">24/7 Support</h4>
+                    <p>
+                        Our dedicated team is always available to help you with
+                        technical support.
+                    </p>
+                    <a href="#" class="btn btn-dark">Read More</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+  </div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  
+
+<hr>
+<hr>
+<hr>
+<hr>
+
+
+
+  <div class="container py-5">
+
+    <div class="text-center mb-5">
+        <h1 class="fw-bold">Our Features</h1>
+        <p class="text-secondary">
+            We offer innovative solutions to help your business grow.
+        </p>
+    </div>
+
+    <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                    <div class="text-primary fs-1 mb-3">
+                        <i class="bi bi-code-slash"></i>
+                    </div>
+                    <h4>Web Design</h4>
+                    <p class="text-secondary">
+                        Create responsive and attractive websites using modern technologies.
+                    </p>
+                    <a href="#" class="btn btn-outline-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                    <div class="text-success fs-1 mb-3">
+                        <i class="bi bi-phone"></i>
+                    </div>
+                    <h4>Mobile Apps</h4>
+                    <p class="text-secondary">
+                        Build Android and iOS applications with smooth performance.
+                    </p>
+                    <a href="#" class="btn btn-outline-success">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                    <div class="text-danger fs-1 mb-3">
+                        <i class="bi bi-bar-chart-line"></i>
+                    </div>
+                    <h4>Marketing</h4>
+                    <p class="text-secondary">
+                        Grow your business with digital marketing and SEO strategies.
+                    </p>
+                    <a href="#" class="btn btn-outline-danger">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                    <div class="text-warning fs-1 mb-3">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h4>Security</h4>
+                    <p class="text-secondary">
+                        Keep your business secure with reliable protection services.
+                    </p>
+                    <a href="#" class="btn btn-outline-warning">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                    <div class="text-info fs-1 mb-3">
+                        <i class="bi bi-cloud"></i>
+                    </div>
+                    <h4>Cloud Storage</h4>
+                    <p class="text-secondary">
+                        Store your important files safely with cloud-based solutions.
+                    </p>
+                    <a href="#" class="btn btn-outline-info">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                    <div class="text-dark fs-1 mb-3">
+                        <i class="bi bi-headset"></i>
+                    </div>
+                    <h4>Customer Support</h4>
+                    <p class="text-secondary">
+                        Get 24/7 assistance from our experienced support team.
+                    </p>
+                    <a href="#" class="btn btn-outline-dark">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<hr>
+<hr>
+<hr>
+<hr>
+
+  <div class="container py-5">
+
+    <div class="text-center mb-5">
+        <h1 class="fw-bold">Why Shop With Us?</h1>
+        <p class="text-secondary">
+            We provide the best services to make your shopping experience simple and enjoyable.
+        </p>
+    </div>
+
+    <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100 text-center shadow border-0">
+                <div class="card-body">
+                    <i class="bi bi-truck display-3 text-primary"></i>
+                    <h4 class="mt-3">Fast Delivery</h4>
+                    <p class="text-secondary">
+                        Receive your orders quickly with our nationwide delivery service.
+                    </p>
+                    <button class="btn btn-primary">Explore</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100 text-center shadow border-0">
+                <div class="card-body">
+                    <i class="bi bi-arrow-repeat display-3 text-success"></i>
+                    <h4 class="mt-3">Easy Returns</h4>
+                    <p class="text-secondary">
+                        Return or exchange products within 30 days without hassle.
+                    </p>
+                    <button class="btn btn-success">Explore</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100 text-center shadow border-0">
+                <div class="card-body">
+                    <i class="bi bi-credit-card display-3 text-warning"></i>
+                    <h4 class="mt-3">Secure Payment</h4>
+                    <p class="text-secondary">
+                        Multiple secure payment options with complete transaction safety.
+                    </p>
+                    <button class="btn btn-warning text-white">Explore</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-6 col-lg-3">
+            <div class="card h-100 text-center shadow border-0">
+                <div class="card-body">
+                    <i class="bi bi-headset display-3 text-danger"></i>
+                    <h4 class="mt-3">24/7 Support</h4>
+                    <p class="text-secondary">
+                        Our support team is always available to answer your questions.
+                    </p>
+                    <button class="btn btn-danger">Explore</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row mt-5">
+
+        <div class="col-lg-6">
+            <div class="card border-0 shadow">
+                <div class="card-body">
+                    <h3 class="mb-3">Our Promise</h3>
+                    <p>
+                        We are committed to providing quality products, reliable delivery,
+                        secure payments, and excellent customer support. Customer satisfaction
+                        is our highest priority.
+                    </p>
+                    <a href="#" class="btn btn-outline-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="card border-0 shadow">
+                <div class="card-body">
+                    <h3 class="mb-3">Need Assistance?</h3>
+                    <p>
+                        Have questions about your order or our services? Contact our
+                        support team anytime, and we'll be happy to help.
+                    </p>
+                    <a href="#" class="btn btn-outline-success">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+  </div> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 </html>
